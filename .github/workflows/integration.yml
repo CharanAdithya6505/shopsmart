@@ -98,7 +98,7 @@ jobs:
         uses: rtCamp/action-slack-notify@v2
         env:
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}  
-          SLACK_CHANNEL: '#all-github-actions'  
+          SLACK_CHANNEL: '#new-channel'  
           SLACK_COLOR: ${{ needs.client.result == 'success' && needs.server.result == 'success' && 'good' || 'danger' }}  
           SLACK_TITLE: 'CI Update | ${{ github.repository }}'  
           SLACK_MESSAGE: '${{ needs.client.result == ''success'' && needs.server.result == ''success'' && ''🟢 CI PASSED'' || ''🔴 CI FAILED'' }} | <https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}|View Run>'  
