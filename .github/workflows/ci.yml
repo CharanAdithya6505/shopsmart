@@ -45,7 +45,7 @@ jobs:
         run: npm run test
       
       - name: Check formatting
-        run: npm run format -- --check
+        run: npm run format:check
       
       - name: Build client
         run: npm run build
@@ -87,7 +87,7 @@ jobs:
         run: npm run test
       
       - name: Check formatting
-        run: npm run format -- --check
+        run: npm run format:check
       
       - name: Verify server setup
         run: node --version && npm --version
