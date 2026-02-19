@@ -4,11 +4,11 @@ on:
       name:
         description: 'Name'
         required: true
-        default: 'Vivekananda'
+        default: 'charan'
       city: 
         description: 'City'
         required: true
-        default: 'Hyderabad'
+        default: 'Addanki'
       country: 
         description: 'Country'
         required: true
